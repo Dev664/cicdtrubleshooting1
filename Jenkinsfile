@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = "doc201/flask-app"
-        TAG = "${BUIL_NUMBER}"
+        TAG = "${BUILD_NUMBER}"
         KUBECONFIG = "/var/lib/jenkins/.kube/config"
     }
 
