@@ -38,7 +38,7 @@ HTML = """
 
 <div class="card">
     <h1>🚀 CI/CD Demo project: Application Deployment </h1>
-    <h2>Version 2</h2git >
+    <h2>Version 0</h2git >
 
     <p>Successfully deployed by Debdip Ghosh:</p>
 
