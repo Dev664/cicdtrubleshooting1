@@ -2,18 +2,18 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "doc201/flask-app"
-        TAG = "${BUILD_NUMBER}"
+        DOCKER_IMAGE = "doc200/flask-app"
+        TAG = "${latest}"
         KUBECONFIG = "/var/lib/jenkins/.kube/config"
     }
 
-    stages {
+    stages {git 
 
         stage('Clone Code') {
             steps {
-                git branch: 'main',
+                git branch: 'release',
                     credentialsId: 'github-creds',
-                    url: 'https://github.com/Dev664/cicdtrubleshooting1'
+                    url: 'https://github.com/Dev664/cicdtrubleshooting1_updated'
             }
         }
 
@@ -30,7 +30,7 @@ pipeline {
             steps {
                 withCredentials([
                     usernamePassword(
-                        credentialsId: 'dockerhub-creds',
+                        credentialsId: 'dockerhub-cred',
                         usernameVariable: 'USER',
                         passwordVariable: 'PASS'
                     )
