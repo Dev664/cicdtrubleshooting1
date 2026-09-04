@@ -32,12 +32,13 @@ HTML = """
             font-size: 12px;
         }
     </style>
-</head>
+</head>cd ..
+
 <body>
 
 <div class="card">
     <h1>🚀 CI/CD Demo project: Application Deployment </h1>
-    <h2>Version 0</h2>
+    <h2>Version 1</h2>
 
     <p>Successfully deployed by Debdip Ghosh:</p>
 
