@@ -13,7 +13,7 @@ pipeline {
             steps {
                 git branch: 'main',
                     credentialsId: 'github-creds',
-                    url: 'https://github.com/Dev664/db12cicd_updated'
+                    url: 'https://github.com/Dev664/cicdtrubleshooting1'
             }
         }
 
