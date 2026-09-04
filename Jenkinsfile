@@ -7,13 +7,13 @@ pipeline {
         KUBECONFIG = "/var/lib/jenkins/.kube/config"
     }
 
-    stages {git 
+    stages {
 
         stage('Clone Code') {
             steps {
                 git branch: 'main',
                     credentialsId: 'github-creds',
-                    url: 'https://github.com/Dev664/cicdtrubleshooting1_updated'
+                    url: 'https://github.com/Dev664/cicdtrubleshooting1'
             }
         }
 
