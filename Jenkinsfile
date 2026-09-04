@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "doc200/flask-app"
+        DOCKER_IMAGE = "doc201/flask-app"
         TAG = "${latest}"
         KUBECONFIG = "/var/lib/jenkins/.kube/config"
     }
